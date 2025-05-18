@@ -81,7 +81,27 @@ fn main() {
     let inferred_array = [99, 98, 87];
     println!("{}", inferred_array[0]);
 
-    // destructure
+    // destructure array
     let [a1, a2, a3] = inferred_array;
     println!("{}", a3);
+
+    // if 
+    let is_true = true;
+    if is_true {
+        println!("{}", "Yep, its true");
+    }
+
+    let temp = 25;
+    if temp < 25 {
+        println!("{}", "Turn on the heater");
+    } else if temp == 25 {
+        println!("{}", "Temp is perfect.");
+    } else {
+        println!("{}", "Turn on the AC.");
+    }
+
+    // assign var to an if
+    let is_number = true;
+    let number = if is_number {4} else {5};
+    println!("{}", number);
 }
